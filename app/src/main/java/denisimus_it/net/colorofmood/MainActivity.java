@@ -1,7 +1,7 @@
 package denisimus_it.net.colorofmood;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void onClickFindDescription(View view) {
-
+        spinnerColors.getSelectedItemPosition();
 
     }
 }
