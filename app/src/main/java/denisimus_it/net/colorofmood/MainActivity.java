@@ -21,7 +21,13 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void onClickFindDescription(View view) {
-        spinnerColors.getSelectedItemPosition();
+        int itemPosition = spinnerColors.getSelectedItemPosition();
+        textViewDescriptionTemp.setText(getDescriptionByPosition(itemPosition));
 
+    }
+
+    private String getDescriptionByPosition(int itemPosition) {
+        String[] descriptionOfTemp = getResources().getStringArray(R.array.description_of_temp);
+        return descriptionOfTemp[itemPosition];
     }
 }
